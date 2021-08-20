@@ -9,10 +9,17 @@ public class ExecutarProduto {
 		
 		Produto micro = new Produto("dell", "Notebook");
 		
-		//micro.setDescricao("Monitor 25p");
-		//micro.setMarca("Samsung");
 		System.out.println(micro.detalhe());
-
+		
+		Produto tv = new Produto();
+		tv.setDescricao("UltraSin");
+		tv.setMarca("Samsung");
+		System.out.println(tv.detalhe());
+		
+		Produto impressora = new Produto("HP DeskInk", 250.0f);
+		
+		System.out.println(impressora.detalhe());
+		System.out.println(impressora.getValor());
 	}
 
 }

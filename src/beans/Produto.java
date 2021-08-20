@@ -5,14 +5,23 @@ public class Produto {
 	private String marca;
 	private float valor;
 	
-	
+	public Produto() {};
 	public Produto(String descricao, String marca) {
 		this.descricao = descricao;
 		this.marca = marca;
 	}
 	
+	public Produto(String descricao, float valor) {
+		this.descricao = descricao;
+		this.valor = valor;
+	}
 	
-	
+	public Produto(String descricao, String marca, float valor) {
+		super();
+		this.descricao = descricao;
+		this.marca = marca;
+		this.valor = valor;
+	}
 	
 	// getters e setters
 	
