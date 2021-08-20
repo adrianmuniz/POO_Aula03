@@ -5,6 +5,15 @@ public class Produto {
 	private String marca;
 	private float valor;
 	
+	
+	public Produto(String descricao, String marca) {
+		this.descricao = descricao;
+		this.marca = marca;
+	}
+	
+	
+	
+	
 	// getters e setters
 	
 	//setters = acessar, atribuir
