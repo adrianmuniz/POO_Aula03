@@ -20,6 +20,11 @@ public class ExecutarProduto {
 		
 		System.out.println(impressora.detalhe());
 		System.out.println(impressora.getValor());
+		
+		Produto game = new Produto("PS5", "Sony", 4000f);
+		System.out.println(game.detalhe());
+		System.out.println(game.getValor());
+		
 	}
 
 }

@@ -4,6 +4,7 @@ public class Produto {
 	private String descricao;
 	private String marca;
 	private float valor;
+	private boolean promocao;
 	
 	public Produto() {};
 	public Produto(String descricao, String marca) {
@@ -21,6 +22,14 @@ public class Produto {
 		this.descricao = descricao;
 		this.marca = marca;
 		this.valor = valor;
+	}
+	
+	public Produto(String descricao, String marca, float valor, boolean promocao) {
+		super();
+		this.descricao = descricao;
+		this.marca = marca;
+		this.valor = valor;
+		this.promocao = promocao;
 	}
 	
 	// getters e setters
@@ -56,8 +65,14 @@ public class Produto {
 			this.valor = valor;
 		}
 	}
-
+	
+	public boolean isPromocao() {
+		return promocao;
+	}
+	public void setPromocao(boolean promocao) {
+		this.promocao = promocao;
+	}
 	public String detalhe() {
-		return "Produto:" + descricao + " - Marca:" + marca; 
+		return "Produto:" + descricao + " - Marca:" + marca + " - Preoço: " + valor + " - Promoção: " + promocao; 
 	}
 }
