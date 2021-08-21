@@ -4,11 +4,13 @@ import javax.swing.JOptionPane;
 
 import beans.Produto;
 
+
 public class ExecutarProduto2 {
 
 	public static void main(String[] args) {
 		
 		int resp;
+		
 		Produto impressora = new Produto() {};
 		
 		impressora.setDescricao("Deskjet");
@@ -25,6 +27,11 @@ public class ExecutarProduto2 {
 		}
 		
 		System.out.println(impressora.detalhe());
-	}
+		
+		// construtor ja com as informações
+		
+		Produto note = new Produto(JOptionPane.showInputDialog("Descricao"),JOptionPane.showInputDialog("Marca"), Float.parseFloat(JOptionPane.showInputDialog("Preço")), Boolean.parseBoolean(JOptionPane.showInputDialog("Promoção")));
 
+		System.out.println(impressora.detalhe());
+	}
 }
