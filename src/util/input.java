@@ -1,11 +1,8 @@
-package implementacao;
+package util;
 
 import javax.swing.JOptionPane;
 
-import beans.Produto;
-
-public class ExecutarProduto3 {
-
+public class input {
 	public static String texto(String msg) {
 		return JOptionPane.showInputDialog(msg);
 	}
@@ -21,14 +18,4 @@ public class ExecutarProduto3 {
 		return false;
 	}
 	
-	public static void main(String[] args) {
-	
-		Produto note = new Produto(texto("Descricao"),
-				texto("Marca"), 				
-				decimal("Preço"),
-				logico("Promoção"));
-
-		System.out.println(note.detalhe());
-	}
-
 }
