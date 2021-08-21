@@ -10,6 +10,10 @@ public class ExecutarProduto3 {
 		return JOptionPane.showInputDialog(msg);
 	}
 	
+	public static float decimal (String msg) {
+		return Float.parseFloat(texto("preço"));
+	}
+	
 	public static void main(String[] args) {
 	
 		Produto note = new Produto(texto("Descricao"),
