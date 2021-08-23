@@ -73,6 +73,6 @@ public class Produto {
 		this.promocao = promocao;
 	}
 	public String detalhe() {
-		return "Produto:" + descricao + " - Marca:" + marca + " - Preoço: " + valor + " - Promoção: " + promocao; 
+		return "Produto:" + descricao + " - Marca:" + marca + " - Preço: " + valor + " - Promoção: " + promocao; 
 	}
 }
