@@ -59,6 +59,10 @@ public class Conta {
 	}
 
 	public double saque (double quantidade) {
+		if (quantidade > limiteEspecial) {
+			System.out.println("Sem saldo");
+		}
+		System.out.println("Sucesso");
 		return saldo -= quantidade;
 	}
 	
@@ -67,6 +71,11 @@ public class Conta {
 	}
 	
 	public double definirLimite(double limite) {
+		if (tipoConta.equalsIgnoreCase("Corrente") && limite >= 0.0) {
+			System.out.println("Sucesso");
+			return limiteEspecial = limite;
+		}
+		System.out.println("Tipo de Conta inválida");
 		return limiteEspecial = limite;
 	}
 	
